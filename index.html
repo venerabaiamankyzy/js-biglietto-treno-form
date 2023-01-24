@@ -5,43 +5,54 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Biglietto treno</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
   <!-- css -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <div class="container">
-    <div class="top-content">
-      <h1 id="ticket-price">Calcola il prezzo sel tuo biglietto</h1>
-      
-      <div class="top-content-continer">
-        <form>
-          <label for="name">Nome Cognome</label>
-          <input type="text" id="name" placeholder="John Snow">
+    <h1 id="ticket-price" class="h1 display-6 p-4 text-center text-light fw-semibold">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <div class="top-content ">
+      <div class="top-content-continer d-flex justify-content-center p-4">
+        <form class="d-flex justify-content-center flex-column">
+          <div class="form-top d-flex gap-5 justify-content-center mt-2">
+             <label for="name" class="d-flex flex-column text-center fs-5 main-color fw-semibold">Nome Cognome 
+            <input type="text" id="name" class="border border-2 border-danger p-1 rounded-2 text-center mt-3" placeholder="John Snow"></label>
+         
 
-          <label for="userkm">Km da percorrere</label>
-          <input type="number" id="userkm" placeholder="10">
+          <label for="userkm" class="d-flex flex-column text-center fs-5 main-color fw-semibold">Km da percorrere
+            <input type="number" id="userkm" class="border border-2 border-danger p-1 rounded-2 text-center mt-3" placeholder="10"></label>
+          
 
-          <!-- <label for="age"></label>
-          <input type="number" id="age" placeholder="age"> -->
+          <label for="age" class="d-flex flex-column text-center fs-5 main-color fw-semibold ">Fascia d'età:
+            <select id="age" name="age" class="border border-2 border-danger p-2 rounded-2 text-center mt-3" >
 
-          <label for="age">Fascia d'età:</label>
-          <select id="age" name="age">
             <option value="Minorenne">Minorenne</option>
             <option value="Maggiorenne">Maggiorenne</option>
             <option value="Over65">Over 65</option>
-          </select>
-
-          <button type="button" id="button-genera">Genera</button>
-          <button type="button">Annulla</button>
+          </select></label>
+          </div>
+         
+          <div class="buttons mt-5 mb-2 text-center">
+            <button type="button" id="button-genera" class="btn btn-outline-danger fs-5 px-4 fw-bold mx-2">Genera</button>
+            <button type="button" class="btn btn-outline-secondary fs-5 px-4 fw-bold">Annulla</button>
+          </div>
+          
         </form>
       </div>
     </div>
+      <h2 id="ticket-price" class="h1 display-6 mt-4 text-center text-light fw-semibold"> IL TUO BIGLIETTO</h2>
+      <div class="bottom-content">
+        <h4 class="pt-3 ps-3">DETTAGLIO PASSEGGERI</h4>
 
-    <div class="bottom-content">
-      <h2 id="ticket-price">Il tuo biglietto</h2>
-
-      <div class="bottom-content-continer">
-      <p id="final-price"></p>
+      <div class="bottom-content-container d-flex   justify-content-between m-4 border border-2 border-end-0 border-opacity-50 border-secondary height-20hv">
+        <h5 id="user name" class="bg-secondary mb-0 p-4">Nome passeggero</h5>
+        <p id="offerta" class="fs-4 fw-semibold text-start">Offerta</p>
+        <p id="carrozza" class="fs-4  fw-semibold">Carrozza</p>
+        <p id="codice-cp" class="fs-4  fw-semibold">Codice CP</p>
+        <p id="costo biglietto" class="fs-4  fw-semibold">Costa biglietto</p>
       </div>
     </div>
     

@@ -1,0 +1,32 @@
+body {
+  background-color: #b91450;
+}
+.main-color {
+  color: #b91450;
+}
+.top-content {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 20px rgba(80, 55, 55, 0.6);
+  
+}
+
+.bottom-content {
+  height: 30vh;
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 30px;
+  border-radius: 10px;
+
+}
+
+.height-20hv {
+  min-height: 150px;
+}
+
+.btn-outline-danger {
+  border: 2px solid;
+}
