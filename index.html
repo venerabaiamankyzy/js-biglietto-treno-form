@@ -27,41 +27,60 @@
           
 
           <label for="age" class="d-flex flex-column text-center fs-5 main-color fw-semibold ">Fascia d'età:
-            <select id="age" name="age" class="border border-2 border-danger p-2 rounded-2 text-center mt-3" >
+            <select id="age" class="border border-2 border-danger p-2 rounded-2 text-center mt-3" >
 
-            <option value="Minorenne">Minorenne</option>
-            <option value="Maggiorenne">Maggiorenne</option>
-            <option value="Over65">Over 65</option>
+            <option id="one" value="minorenne">Minorenne</option>
+            <option id="two" value="maggiorenne">Maggiorenne</option>
+            <option id="three" value="over">Over 65</option>
           </select></label>
           </div>
          
           <div class="buttons mt-5 mb-2 text-center">
             <button type="button" id="button-genera" class="btn btn-outline-danger fs-5 px-4 fw-bold mx-2">Genera</button>
-            <button type="button" class="btn btn-outline-secondary fs-5 px-4 fw-bold">Annulla</button>
+            <button type="button" id="bitton-annulla" class="btn btn-outline-secondary fs-5 px-4 fw-bold">Annulla</button>
           </div>
           
         </form>
       </div>
     </div>
+   
       <h2 id="ticket-price" class="h1 display-6 mt-4 text-center text-light fw-semibold"> IL TUO BIGLIETTO</h2>
-      <div class="bottom-content">
+      <div class="bottom-content pb-3">
         <h4 class="pt-3 ps-3">DETTAGLIO PASSEGGERI</h4>
 
-      <div class="bottom-content-container d-flex   justify-content-between m-4 border border-2 border-end-0 border-opacity-50 border-secondary height-20hv">
-        <h5 id="user name" class="bg-secondary mb-0 p-4">Nome passeggero</h5>
-        <p id="offerta" class="fs-4 fw-semibold text-start">Offerta</p>
-        <p id="carrozza" class="fs-4  fw-semibold">Carrozza</p>
-        <p id="codice-cp" class="fs-4  fw-semibold">Codice CP</p>
-        <p id="costo biglietto" class="fs-4  fw-semibold">Costa biglietto</p>
+      <div class="bottom-content-container d-flex   justify-content-between m-4 border border-2 border-end-0 border-opacity-50 border-secondary">
+        <div class="">
+          <h5 class="bg-secondary mb-0 p-4 text-light">Nome passeggero</h5>
+          <p id="user name" class="bg-secondary mb-0 p-4"></p>
+        </div>
+
+        <div>
+          <p class="fs-4 fw-semibold text-start">Offerta</p>
+          <p id="offerta"></p>
+        </div>
+
+        <div>
+          <p class="fs-4  fw-semibold">Carrozza</p>
+          <p id="carrozza"></p>
+        </div>
+        
+        <div>
+          <p  class="fs-4  fw-semibold">Codice CP</p>
+          <p id="codice-cp"></p>
+        </div>
+        
+        <div>
+          <p  class="fs-4  fw-semibold">Costa biglietto</p>
+          <p id="costo biglietto"></p>
+        </div>
+        
       </div>
-    </div>
-    
+    </div> 
     
     
   </div>
-  
-  
-<!-- js -->
-<script type="text/javascript" src="./js/main.js"></script>
+    
+  <!-- js -->
+  <script type="text/javascript" src="./js/secomd.js"></script>
 </body>
 </html>
